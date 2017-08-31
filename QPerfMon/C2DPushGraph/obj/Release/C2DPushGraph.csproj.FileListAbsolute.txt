@@ -1,0 +1,6 @@
+D:\Labs\qperfmon-89970\QPerfMon\C2DPushGraph\bin\Release\C2DPushGraph.dll
+D:\Labs\qperfmon-89970\QPerfMon\C2DPushGraph\bin\Release\C2DPushGraph.pdb
+D:\Labs\qperfmon-89970\QPerfMon\C2DPushGraph\obj\Release\C2DPushGraph.csprojResolveAssemblyReference.cache
+D:\Labs\qperfmon-89970\QPerfMon\C2DPushGraph\obj\Release\C2DPushGraph.csproj.CoreCompileInputs.cache
+D:\Labs\qperfmon-89970\QPerfMon\C2DPushGraph\obj\Release\C2DPushGraph.dll
+D:\Labs\qperfmon-89970\QPerfMon\C2DPushGraph\obj\Release\C2DPushGraph.pdb

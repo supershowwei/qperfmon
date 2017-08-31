@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35050925-C588-469E-9FDE-C53CE4690EDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QPerfMon</RootNamespace>
+    <AssemblyName>QPerfMon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>GRAPH04.ICO</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCounter.Designer.cs">
+      <DependentUpon>AddCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCounters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCounters.Designer.cs">
+      <DependentUpon>AddCounters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandLineUtils.cs" />
+    <Compile Include="Controls\DragAndDropListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DragAndDropListView.designer.cs">
+      <DependentUpon>DragAndDropListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FadeSnapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formatting.Designer.cs">
+      <DependentUpon>Formatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphFormatting.Designer.cs">
+      <DependentUpon>GraphFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogToFileOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogToFileOptions.Designer.cs">
+      <DependentUpon>LogToFileOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCMonInstance.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlUtils.cs" />
+    <EmbeddedResource Include="AddCounter.resx">
+      <DependentUpon>AddCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCounters.resx">
+      <DependentUpon>AddCounters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formatting.resx">
+      <DependentUpon>Formatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphFormatting.resx">
+      <DependentUpon>GraphFormatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogToFileOptions.resx">
+      <DependentUpon>LogToFileOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetInitialGraphMax.resx">
+      <DependentUpon>SetInitialGraphMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QPerfMonFile.cs" />
+    <Compile Include="SerializeUtils.cs" />
+    <Compile Include="SetInitialGraphMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetInitialGraphMax.Designer.cs">
+      <DependentUpon>SetInitialGraphMax.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LineFlowGraph2D\LineFlowGraph2D.csproj">
+      <Project>{94D1A1DD-60AA-4261-A2DD-9A71B7A92D54}</Project>
+      <Name>LineFlowGraph2D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRAPH04.ICO" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\AddEx.png" />
+    <None Include="Resources\folder_doc.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\Old2New.ico" />
+    <None Include="Resources\doc_edit.png" />
+    <Content Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
